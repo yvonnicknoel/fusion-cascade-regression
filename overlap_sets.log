@@ -1,0 +1,102 @@
+(A) SAPA: 135 items, n = 3536, 50 splits, 60 cores 
+  split 39 done (8.7 min)
+  split  7 done (8.8 min)
+  split 45 done (8.8 min)
+  split 27 done (8.8 min)
+  split  3 done (8.8 min)
+  split  6 done (8.8 min)
+  split  8 done (8.8 min)
+  split 40 done (8.8 min)
+  split 17 done (8.8 min)
+  split 43 done (8.8 min)
+  split 19 done (8.8 min)
+  split 18 done (8.8 min)
+  split 42 done (8.8 min)
+  split 11 done (8.8 min)
+  split  4 done (8.8 min)
+  split 25 done (8.8 min)
+  split 28 done (8.8 min)
+  split 33 done (8.8 min)
+  split 23 done (8.8 min)
+  split 37 done (8.8 min)
+  split 12 done (8.8 min)
+  split 46 done (8.8 min)
+  split 24 done (8.8 min)
+  split 35 done (8.8 min)
+  split 30 done (8.8 min)
+  split 29 done (8.8 min)
+  split 26 done (8.8 min)
+  split 49 done (8.8 min)
+  split 41 done (8.8 min)
+  split  1 done (8.8 min)
+  split 20 done (8.8 min)
+  split 15 done (8.8 min)
+  split 16 done (8.8 min)
+  split 31 done (8.8 min)
+  split 14 done (8.8 min)
+  split 22 done (8.8 min)
+  split 48 done (8.8 min)
+  split 34 done (8.8 min)
+  split 21 done (8.9 min)
+  split 32 done (8.9 min)
+  split  2 done (8.9 min)
+  split 36 done (8.9 min)
+  split 50 done (8.9 min)
+  split  5 done (9.8 min)
+  split 10 done (9.8 min)
+  split 44 done (9.9 min)
+  split 47 done (9.9 min)
+
+=== (A) SAPA: overlap with Fusion over 50 splits === 
+method          |F|    |M|  containment  coverage  Jaccard    F⊂M %    M⊂F % 
+AIC            10.3   51.6        1.000     0.200    0.200        100          0 
+BIC            10.3   15.9        1.000     0.651    0.651        100          0 
+SCAD           10.3   55.1        0.993     0.207    0.206         92          0 
+ElasticNet     10.3   26.2        0.958     0.379    0.372         62          0 
+Lasso          10.3   24.4        0.948     0.401    0.392         62          0 
+RelaxedLasso   10.3   16.6        0.759     0.479    0.405         12          0 
+Holm           10.3    3.0        0.288     0.969    0.285          0         88 
+
+(B) Simulation slice: n=200 p=20 s=5 R2=0.5 rho in {0,0.7}, 200 reps each 
+  rho=0.0 rep  20 done (10.0 min)
+  rho=0.0 rep  40 done (10.0 min)
+  rho=0.0 rep  60 done (10.0 min)
+  rho=0.0 rep  80 done (10.0 min)
+  rho=0.0 rep 100 done (10.0 min)
+  rho=0.0 rep 120 done (10.0 min)
+  rho=0.0 rep 140 done (10.0 min)
+  rho=0.0 rep 160 done (10.0 min)
+  rho=0.0 rep 180 done (10.0 min)
+  rho=0.7 rep  20 done (10.1 min)
+  rho=0.0 rep 200 done (10.1 min)
+  rho=0.7 rep  40 done (10.1 min)
+  rho=0.7 rep  60 done (10.1 min)
+  rho=0.7 rep  80 done (10.1 min)
+  rho=0.7 rep 100 done (10.1 min)
+  rho=0.7 rep 120 done (10.1 min)
+  rho=0.7 rep 160 done (10.1 min)
+  rho=0.7 rep 140 done (10.1 min)
+  rho=0.7 rep 180 done (10.1 min)
+  rho=0.7 rep 200 done (10.1 min)
+
+=== (B) rho = 0.0: overlap with Fusion (mean over 200 reps) === 
+method         |F|   |M| containment coverage    Jacc F⊂M% M⊂F%  extraTP  extraFP  FPshare missTP/FP 
+AIC           5.04  7.63       1.000    0.688   0.688    100      8     0.01     2.58     1.00 0.00/0.00 
+BIC           5.04  5.42       1.000    0.939   0.939    100     66     0.01     0.37     0.37 0.00/0.00 
+ElasticNet    5.04  6.46       1.000    0.818   0.818    100     34     0.01     1.41     0.99 0.00/0.00 
+SCAD          5.04  7.92       1.000    0.676   0.676    100      9     0.01     2.87     1.00 0.00/0.00 
+Lasso         5.04  5.96       0.999    0.873   0.872    100     48     0.01     0.91     0.91 0.00/0.01 
+Holm          5.04  5.00       0.991    0.998   0.989     95     99     0.00     0.01     0.01 0.02/0.03 
+RelaxedLasso  5.04  4.83       0.956    0.997   0.953     80     98     0.00     0.02     0.02 0.18/0.04 
+
+=== (B) rho = 0.7: overlap with Fusion (mean over 200 reps) === 
+method         |F|   |M| containment coverage    Jacc F⊂M% M⊂F%  extraTP  extraFP  FPshare missTP/FP 
+AIC           4.74  8.02       1.000    0.622   0.622    100      5     0.33     2.96     0.90 0.00/0.00 
+BIC           4.74  5.37       1.000    0.898   0.898    100     62     0.20     0.43     0.43 0.00/0.00 
+SCAD          4.74  7.33       1.000    0.718   0.718    100     24     0.29     2.31     0.89 0.00/0.00 
+ElasticNet    4.74  7.99       0.970    0.596   0.585     88      2     0.32     3.08     0.91 0.14/0.01 
+Lasso         4.74  6.82       0.955    0.693   0.671     82     12     0.29     2.00     0.87 0.20/0.02 
+RelaxedLasso  4.74  5.28       0.868    0.811   0.718     58     38     0.20     0.97     0.83 0.57/0.06 
+Holm          4.74  3.73       0.768    0.987   0.761     38     96     0.03     0.03     0.03 0.94/0.12 
+
+Done in 10.2 min. 

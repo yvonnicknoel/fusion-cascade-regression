@@ -1,0 +1,15 @@
+n=200 p=20, B=10000 null draws per design, BCAL=8000, 60 cores; tol = alpha + 3SE = 0.057 
+
+(1) Sign identity. Max |c_+(k) - c_-(k)| after reversing every second column of an AR(1) rho=0.7 design: 0.00e+00 
+    realized corr(X1,X2): 0.730 (original) vs -0.730 (reversed) 
+  AR(1) rho=+0.7                 neg pairs    0%  irreducible    0%  null rate 0.050 OK   closed-form vs MC: median -0.03%, max |.| 1.70%   (0.1 min) 
+  AR(1) rho=-0.7                 neg pairs   53%  irreducible    0%  null rate 0.049 OK   closed-form vs MC: median -0.76%, max |.| 1.56%   (0.2 min) 
+  AR(1) rho=+0.9                 neg pairs    0%  irreducible    0%  null rate 0.060 ***  closed-form vs MC: median -0.34%, max |.| 1.15%   (0.3 min) 
+  AR(1) rho=-0.9                 neg pairs   53%  irreducible    0%  null rate 0.063 ***  closed-form vs MC: median +0.06%, max |.| 1.00%   (0.4 min) 
+  Blocks(5x4) at -0.30           neg pairs   16%  irreducible   50%  null rate 0.046 OK   closed-form vs MC: median -1.30%, max |.| 2.23%   (0.5 min) 
+  Blocks(5x4) at +0.30           neg pairs    0%  irreducible    0%  null rate 0.051 OK   closed-form vs MC: median +0.24%, max |.| 1.28%   (0.6 min) 
+  3-factor, mixed-sign loadings  neg pairs   42%  irreducible   28%  null rate 0.049 OK   closed-form vs MC: median +0.19%, max |.| 1.06%   (0.7 min) 
+  Equicorr -0.05 (all pairs)     neg pairs  100%  irreducible   90%  null rate 0.052 OK   closed-form vs MC: median -4.74%, max |.| 5.20%   (0.7 min) 
+  Independent (reference)        neg pairs    0%  irreducible    0%  null rate 0.051 OK   closed-form vs MC: median +0.21%, max |.| 1.16%   (0.8 min) 
+
+Done in 0.8 min. 
