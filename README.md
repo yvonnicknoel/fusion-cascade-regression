@@ -4,7 +4,7 @@
 
 This repository accompanies the article:
 
-> Noel, Y. (2026). *A Fusion Cascade for predictor selection in linear regression.* **Psychological Methods.** (Accepted 1 November 2026.)
+> Noel, Y. (2026). *A Fusion Cascade for predictor selection in linear regression.* **Psychological Methods.** Advance online publication. https://doi.org/10.1037/met0000886
 
 It contains the reference R implementation (`cascade_reg.R`, `get_critical_value.R`), the Monte Carlo
 calibration table and the fitted 32-parameter approximation of the critical values, and every script
